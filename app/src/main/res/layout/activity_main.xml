@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true">
+    <LinearLayout
+        android:background="@drawable/gradient"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="@drawable/r">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/logo"
+                    />
+                <TextView
+                    android:id="@+id/Textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SRI SIDDHARTHA INSTITUTE OF TECHNOLOGY"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textSize="60dp"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+
+
+                    />
+
+
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="215dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardCornerRadius="12dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:id="@+id/imageview4"
+                                android:layout_height="50dp"
+                                android:src="@drawable/pro"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PROFILE"
+                                android:textSize="16sp"
+                                android:layout_below="@+id/imageview4"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"/>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonprofile"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardCornerRadius="12dp"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:id="@+id/imageview2"
+                                android:layout_height="50dp"
+                                android:src="@drawable/f"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TIME TABLE"
+                                android:textSize="16sp"
+                                android:layout_below="@+id/imageview2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"/>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttontimetable"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="12dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:id="@+id/imageview3"
+                                android:layout_height="50dp"
+                                android:src="@drawable/e"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SYLLABUS"
+                                android:textSize="16sp"
+                                android:layout_below="@+id/imageview3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"/>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonsyllabus"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:layout_marginLeft="5dp"
+
+                        android:gravity="center"
+                        app:cardCornerRadius="12dp"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:id="@+id/imageview1"
+                                android:layout_height="50dp"
+                                android:src="@drawable/d"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ATTENDANCE"
+                                android:textSize="16sp"
+                                android:layout_below="@+id/imageview1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"/>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonattendance"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+
+                        android:gravity="center"
+
+                        app:cardCornerRadius="12dp"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:id="@+id/imageview5"
+                                android:layout_height="50dp"
+                                android:src="@drawable/a"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="PERFORMANCE DETAILS"
+                                android:textSize="16sp"
+                                android:layout_below="@+id/imageview5"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"/>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonperformance"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardCornerRadius="8dp"
+
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:id="@+id/imageview6"
+                                android:layout_height="50dp"
+                                android:src="@drawable/b"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SEMESTER RESULT"
+                                android:textSize="16sp"
+                                android:layout_below="@+id/imageview6"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"/>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttonresult"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <ScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/btnSpeakContainer"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="20dp"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/voiceInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:id="@+id/btnSpeakContainer"
+                        android:layout_width="132dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="130dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+
+                        android:padding="20dp">
+
+
+                        <ImageButton
+                            android:id="@+id/btnSpeak"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/ic_mic_black_24dp"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
